@@ -5,6 +5,6 @@ do
 	git log -n1 $ref --pretty=format:"%Cgreen%cr%Creset | %C(yellow)%d%Creset% | %C(bold cyan)%an%Creset%n" | 	
   		while IFS='|' read date message author
   		do
-    		printf '%-20s %-35s %-90s\n' "$date" "$author" "$message"
+    		printf '%-25s %35s %30s\n' "$date" "$author" "$message"
   		done
 done
