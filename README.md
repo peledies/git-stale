@@ -15,6 +15,10 @@ Move the script to a location that is in your environment path
 From a current git project issue the following command
 <pre>$ git stale</pre>
 
+####Optional Argument
+An optional argument can be added to git-stale to grep the output for matches. So if you wanted to only show branches created by a specific user then 
+you could pass the users name, or if you wanted to search for a branch that had a certain text in its name you could pass that text.
+<pre>$ git stale John</pre>
 
 ###Troubleshooting
 If the script is not found it is most likely that you dont have /usr/local/bin set up in your environmental path variable
