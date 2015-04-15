@@ -4,7 +4,7 @@ if [[ "$1" != "" ]]
 then
   FILTER="$1"
 else
-  FILTER="Deac"
+  FILTER="/"
 fi
 
 for ref in $(git for-each-ref --sort=-committerdate --format="%(refname:short)" refs/remotes);

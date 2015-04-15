@@ -6,7 +6,7 @@ var colors = require('colors');
 
 try{
   arg = (process.argv[2] !== undefined)? ' '+process.argv[2] : '';
-  exec('./bin/stale.sh'+arg
+  exec(__dirname+'/bin/stale.sh'+arg
     , function (error, stdout, stderr) {
     console.log(stdout);
     if(stderr !== ''){
